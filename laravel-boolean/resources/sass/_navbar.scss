@@ -1,0 +1,36 @@
+.nav_bar {
+    height: $nav_height;
+    width: 100%;
+    background: white;
+    img {
+        float: left;
+        max-width: 200px;
+        margin: 10px;
+    }
+    .menu {
+        float: right;
+        h1 {
+            font-size: 15px;
+            font-weight: 400;
+            height: $nav_height/1.5;
+            float: left;
+            margin: 0px 20px;
+            color: #213E5A;
+            line-height: $nav_height;
+            &:hover {
+                border-bottom: 2px solid #62CC4F;
+            }
+        }
+        .nav_btn {
+            background: #FD9D6C;
+            color: white;
+            font-size: 18px;
+            width: 100px;
+            margin: $nav_height/3.5 50px;
+            &:hover {
+                background: darken($color: #FD9D6C, $amount: 20%);
+            }
+        }
+    }
+
+}
