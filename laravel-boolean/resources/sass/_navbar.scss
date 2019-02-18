@@ -14,7 +14,7 @@
             font-weight: 400;
             height: $nav_height/1.5;
             float: left;
-            margin: 0px 20px;
+            margin: 0px 30px;
             color: #213E5A;
             line-height: $nav_height;
             &:hover {
@@ -28,7 +28,7 @@
             width: 100px;
             margin: $nav_height/3.5 50px;
             &:hover {
-                background: darken($color: #FD9D6C, $amount: 20%);
+                background: lighten($color: #FD9D6C, $amount: 10%);
             }
         }
     }

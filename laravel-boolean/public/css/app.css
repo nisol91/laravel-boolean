@@ -10660,6 +10660,13 @@ a.text-dark:focus {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
 .nav_bar {
   height: 90px;
   width: 100%;
@@ -10681,7 +10688,7 @@ a.text-dark:focus {
   font-weight: 400;
   height: 60px;
   float: left;
-  margin: 0px 20px;
+  margin: 0px 30px;
   color: #213E5A;
   line-height: 90px;
 }
@@ -10699,6 +10706,32 @@ a.text-dark:focus {
 }
 
 .nav_bar .menu .nav_btn:hover {
-  background: #fc5a07;
+  background: #febf9e;
+}
+
+.corpo {
+  width: 100%;
+  height: 150vh;
+  background: grey;
+}
+
+.my_footer {
+  width: 100%;
+  height: 400px;
+  background: red;
+}
+
+.my_footer .fot_top {
+  height: 80%;
+  width: 70%;
+  background: black;
+  margin: 0 auto;
+}
+
+.my_footer .fot_bottom {
+  height: 20%;
+  width: 70%;
+  background: blue;
+  margin: 0 auto;
 }
 
