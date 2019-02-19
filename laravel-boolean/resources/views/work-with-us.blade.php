@@ -3,7 +3,7 @@
     {{$title}}
 @endsection
 @section('content')
-    <div class="corpo">
+    <div class="corpo_static">
         lavora con noi
     </div>
 @endsection

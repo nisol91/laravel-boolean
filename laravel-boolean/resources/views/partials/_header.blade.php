@@ -8,4 +8,4 @@
         <a href="http://"><h1>FAQ</h1></a>
         <button type="button" class="btn nav_btn">Iscriviti</button>
     </div>
-   </div>
+</div>
