@@ -15,6 +15,6 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('privacy-policy', 'StaticPageController@privacy_policy')->name('static_page.privacy');
 Route::get('work-with-us', 'StaticPageController@workWithUs')->name('static_page.workwithus');
-
+//sarebbero, in ordine: NOME PAGINA / VIEW || CONTROLLER@METODO || URL
 
 

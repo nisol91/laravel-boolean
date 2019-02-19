@@ -8,11 +8,13 @@ class StaticPageController extends Controller
 {
     public function privacy_policy()
     {
-       return 'siamo nella pagina privacy policy';
+        $title = 'Privacy Policy';
+        return view('privacy-policy', compact('title'));
     }
 
     public function workWithUs()
     {
-       return 'siamo nella pagina work with us';
+        $title = 'Work with Us!';
+        return view('work-with-us', compact('title'));
     }
 }

@@ -1,17 +1,27 @@
 .my_footer {
     width: 100%;
     height: $foot_height;
-    background: red;
     .fot_top {
-        height: 80%;
+        height: 100% - $foot_bottom_height;
         width: 70%;
-        background: black;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 300px;
+        }
+        h2 {
+            font-size: 12px;
+        }
+        a {
+            color: $bool_blue;
+        }
     }
     .fot_bottom {
-        height: 20%;
-        width: 70%;
-        background: blue;
+        height: $foot_bottom_height;
+        width: 100%;
+        background: $bool_blue;
         margin: 0 auto;
     }
 }
