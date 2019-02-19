@@ -10671,6 +10671,7 @@ a.text-dark:focus {
   height: 90px;
   width: 100%;
   background: white;
+  position: fixed;
 }
 
 .nav_bar img {
@@ -10713,6 +10714,7 @@ a.text-dark:focus {
   width: 100%;
   height: 150vh;
   background: grey;
+  padding-top: 90px;
 }
 
 .my_footer {
@@ -10741,10 +10743,28 @@ a.text-dark:focus {
   color: #213E5A;
 }
 
+.my_footer .fot_top .ft_iii {
+  display: flex;
+}
+
+.my_footer .fot_top .ft_iii i {
+  font-size: 35px;
+  margin: 0 10px;
+  color: #213E5A;
+}
+
 .my_footer .fot_bottom {
   height: 15%;
   width: 100%;
   background: #213E5A;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.my_footer .fot_bottom h2 {
+  color: white;
+  font-size: 14px;
 }
 

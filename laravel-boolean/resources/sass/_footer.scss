@@ -17,11 +17,26 @@
         a {
             color: $bool_blue;
         }
+        .ft_iii {
+            display: flex;
+            i {
+                font-size: 35px;
+                margin: 0 10px;
+                color: $bool_blue;
+            }
+        }
     }
     .fot_bottom {
         height: $foot_bottom_height;
         width: 100%;
         background: $bool_blue;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        h2 {
+            color: white;
+            font-size: 14px;
+        }
     }
 }
