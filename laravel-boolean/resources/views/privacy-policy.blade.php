@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title')
     {{$title}}
+    {{-- qui il titolo lo prendo dai data del controller --}}
 @endsection
 @section('content')
     <div class="corpo_static">

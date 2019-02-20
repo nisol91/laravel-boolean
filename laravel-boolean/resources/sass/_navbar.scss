@@ -19,7 +19,7 @@
             color: $bool_blue;
             line-height: $nav_height;
             &:hover {
-                border-bottom: 2px solid #62CC4F;
+                border-bottom: 2px solid $bool_green;
             }
         }
         .nav_btn {
@@ -34,4 +34,7 @@
         }
     }
 
+}
+.active {
+    border-bottom: 2px solid #62CC4F;
 }
