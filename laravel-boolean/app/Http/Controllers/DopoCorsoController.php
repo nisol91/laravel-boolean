@@ -34,21 +34,22 @@ class DopoCorsoController extends Controller
 
     public function show($slug) {
         $students = $this->students;
-        //in alternativa posso usare config('students')
+        $data = [
+            'title' => 'Show',
+            'meta_description' => 'meta description di boolean show studenti',
+        ];
 
         $studente = [];
         foreach ($students as $key => $value) {
             if ($value['slug'] == $slug) {
                 $studente = $value;
-
-
-                $data = [
-                    'title' => 'Show',
-                    'meta_description' => 'meta description di boolean show studenti',
-                ];
-
-                return view('student-show', $data, compact('studente'));
             }
+        };
+
+        if (empty($studente)) {
+            return abort(404);
         }
+
+        return view('student-show', $data, compact('studente'));
     }
 }

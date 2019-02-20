@@ -7,7 +7,7 @@
         {{-- <a href="http://"><h1 class="">METODO</h1></a> --}}
         <a href="{{ route('metodo') }}"><h1 class={{ Request::route()->getName() == 'metodo' ? 'active' : null }}>METODO</h1></a>
 
-        <a href="{{ route('dopo_corso') }}"><h1 class={{ Request::route()->getName() == 'dopo-il-corso' ? 'active' : null }}>DOPO IL CORSO</h1></a>
+        <a href="{{ route('dopo_corso') }}"><h1 class={{ Request::route()->getName() == 'dopo_corso' ? 'active' : null }}>DOPO IL CORSO</h1></a>
         <a href="http://"><h1 class="">FAQ</h1></a>
         <button type="button" class="btn nav_btn">Iscriviti</button>
     </div>
