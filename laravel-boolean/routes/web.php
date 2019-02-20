@@ -17,7 +17,7 @@ Route::get('metodo', 'MetodoController@index')->name('metodo');
 
 Route::get('dopo-il-corso', 'DopoCorsoController@index')->name('dopo_corso');
 //per mostrare il singolo studente
-Route::get('dopo-il-corso/{slug?}', 'DopoCorsoController@show')->name('dopo_corso.show');
+Route::get('dopo-il-corso/student-show/{slug?}', 'DopoCorsoController@show')->name('dopo_corso.show');
 //metto il punto di domanda perche cosi diventa opzionale lo slug, se non c e non mi da errore
 
 

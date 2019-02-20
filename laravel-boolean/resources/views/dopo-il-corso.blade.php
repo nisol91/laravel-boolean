@@ -9,7 +9,7 @@
                 @foreach ($students as $student)
                 <div class="single_student">
                     <div class="s_sx">
-                        <img src="{{ $student['link'] }}" alt="">
+                        <img src="{{ $student['link'] }}" alt="{{ $student['nome'] }}">
                     </div>
                     <div class="s_c">
                         <h1>{{ $student['nome'] }} ({{ $student['eta'] }} Anni)</h1>
