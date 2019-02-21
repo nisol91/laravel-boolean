@@ -4,30 +4,67 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+var $ = require('jquery');
 require('./bootstrap');
 
-window.Vue = require('vue');
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+//--
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+function PrintData(data) {
+    var arr = data['studenti']
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+    for (i = 0; i < arr.length; i++) {
+        var copia = $('.templates .single_student').clone();
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+        $('.students_cont').append(copia);
 
-const app = new Vue({
-    el: '#app'
+    }
+    $('.students_cont .single_student').each(function (index) {
+        // element == this
+
+        $(this).find('h1').text(arr[index]['nome']);
+        $(this).find('h3').text(arr[index]['eta']);
+        $(this).find('h2').text(arr[index]['azienda']);
+        $(this).find('img').attr('src', arr[index]['link']);
+        $(this).find('a').attr('href', 'http://127.0.0.1:8000/dopo-il-corso/student-show/' + arr[index]['slug']);
+
+
+    });
+  }
+//--
+
+
+
+$(document).ready(function () {
+//questo trucco mi serve per poter usare il js solo per una determinata pagina.
+// se no dovrei fare un file js per ogni pagina.
+    if ($('#gender').length > 0) {
+
+        $('#filtra').click(function () {
+            $('.students_cont').children().remove();
+            var valoreGenere = $('#my-input').val();
+            console.log(valoreGenere);
+
+            $.ajax({
+                //student/filter deve essere nella cartella api ma posso chiamarlo ad hoc come voglio
+                url: "http://127.0.0.1:8000/api/student/filter",
+                method: "GET",
+                data: {
+                    gender: valoreGenere,
+                },
+                success: function (data) {
+                    console.log(data);
+
+                    PrintData(data);
+                },
+                error: function () {
+                    return 'errore';
+                }
+            });
+
+        });
+    }
 });
+
+
+

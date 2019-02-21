@@ -31,6 +31,10 @@
             color: white;
             font-size: 13px;
         }
+        h3 {
+            color: white;
+            font-size: 10px;
+        }
         i {
             color: white;
         }
@@ -44,4 +48,16 @@
             margin: 5px 20px;
         }
     }
+}
+.gender_select {
+    label {
+        text-align: center;
+    }
+    .my_button {
+        margin: 5px 0;
+        background: lightgrey;
+    }
+}
+.nascondi {
+    display: none;
 }

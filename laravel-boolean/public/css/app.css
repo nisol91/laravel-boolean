@@ -10852,6 +10852,11 @@ a.text-dark:focus {
   font-size: 13px;
 }
 
+.students .students_cont h3 {
+  color: white;
+  font-size: 10px;
+}
+
 .students .students_cont i {
   color: white;
 }
@@ -10865,6 +10870,19 @@ a.text-dark:focus {
   max-width: 80px;
   border-radius: 100%;
   margin: 5px 20px;
+}
+
+.gender_select label {
+  text-align: center;
+}
+
+.gender_select .my_button {
+  margin: 5px 0;
+  background: lightgrey;
+}
+
+.nascondi {
+  display: none;
 }
 
 .corpo_static {

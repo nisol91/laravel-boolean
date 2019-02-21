@@ -13,6 +13,5 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('student/filter', 'Api\StudentController@filter');
+//ricorda che il controller del filtro degli studenti e nelle api e inoltre in questo caso ci vuole il back slash

@@ -8,9 +8,12 @@
         <div class="students">
             <div class="students_cont">
                 <ul>
-                @foreach ($studente as $k => $val)
-                    <li>{{ $k }}: {{ $val }}</li>
-                @endforeach
+
+                @forelse ($studente as $k => $val)
+                  <li>{{ $k }}: {{ $val }}</li>
+                @empty
+                    <li>questo studente non esiste</li>
+                @endforelse
                 </ul>
             </div>
         </div>
